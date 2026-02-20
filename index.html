@@ -472,7 +472,7 @@ footer {
 
   <!-- Launch -->
   <div class="card anim-3">
-    <div class="card-label">EXECUTE</div>
+    <div class="card-label">INVESTIGATE</div>
     <div class="card-body">
       <div class="launch-bar">
         <button class="btn-launch" id="btn-launch">⚡ Open Intel Tabs</button>
@@ -503,7 +503,7 @@ footer {
 const SOURCE_GROUPS = [
   {
     icon: '🌐',
-    title: 'IP Intelligence',
+    title: 'IP Address',
     sources: [
 	  { id: 'vt_ip',       name: 'VirusTotal IP',    types: ['ip'],            url: v => `https://www.virustotal.com/gui/ip-address/${v}` },
       { id: 'shodan',       name: 'Shodan',           types: ['ip'],            url: v => `https://www.shodan.io/host/${v}` },
@@ -548,7 +548,6 @@ const SOURCE_GROUPS = [
     sources: [
       { id: 'threatfox',  name: 'ThreatFox',          types: ['ip','hash','domain','url'], url: v => `https://threatfox.abuse.ch/browse.php?search=ioc:${encodeURIComponent(v)}` },
       { id: 'otx_all',    name: 'OTX (General)',      types: ['ip','hash','domain','url'], url: v => `https://otx.alienvault.com/browse/global/indicators?q=${encodeURIComponent(v)}` },
-      { id: 'misp',       name: 'MISP Lookup',        types: ['ip','hash','domain','url'], url: v => `https://misp-galaxy.org/` },
       { id: 'urlhaus',    name: 'URLhaus',            types: ['url','domain','ip'], url: v => `https://urlhaus.abuse.ch/browse.php?search=${encodeURIComponent(v)}` },
     ]
   },
